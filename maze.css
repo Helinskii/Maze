@@ -1,0 +1,62 @@
+body {
+  background: #7B8D8E;
+  margin: auto;
+  margin-top: 100px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+canvas {
+  margin: auto;
+  display: block;
+  background: #F2EDD8;
+}
+
+#instructions {
+  margin: auto;
+  margin-top: 30px;
+  width: 400px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#introduction {
+  font-size: 40px;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  color: white;
+}
+
+#inst {
+  margin-top: 10px;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  color: white;
+}
+
+#start-button {
+  background-color: white;
+  border: none;
+  color: black;
+  font: 25px FreeMono, monospace;
+  margin: 10px auto;
+  width: 110px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#maze {
+  color: coral;
+  font-size: 70px;
+}
+
+#levels {
+  color: coral;
+  font-size: 20px;
+}

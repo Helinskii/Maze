@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Maze</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <link href="maze.css" rel="stylesheet">
+  <script type="application/javascript">
+    function init() {
+      canvas = document.getElementById("drawBoard");
+      context = canvas.getContext('2d');
+
+      context.save();
+      context.font = "100px Courier New";
+      context.fillStyle = "#5D4C46";
+      context.fillText("Maze", 0, 70);
+      context.restore();
+    }
+
+    function loadJS(file) {
+      var jsElm = document.createElement("script");
+      jsElm.type = "application/javascript";
+      jsElm.src = file;
+      document.body.appendChild(jsElm);
+    }
+  </script>
+</head>
+<body onload="init()">
+  <canvas id="drawBoard" width=400 height=400></canvas>
+  <div id="instructions">
+    <p id="introduction">
+      Hey there! <br>Welcome to <span id="maze">Maze</span>
+    </p>
+    <p id="inst">
+      Use the arrow keys to move, and try to reach the end before the
+      timer ends.<br>
+      <span id="levels">There are four levels.</span><br>
+       Good Luck!
+    </p>
+    <button id="start-button" onclick="loadJS('maze.js');">Start</button>
+  </div>
+</body>
+</html>
